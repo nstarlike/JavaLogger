@@ -4,9 +4,9 @@ There are a plenty of libraries to log messages. When we need to print some mess
 
 ## Architecture
 - Configuration
+- Context
+- Formatter
 - Logger
-- Appender
-- Layout
 
 ## Technology
 - Java
