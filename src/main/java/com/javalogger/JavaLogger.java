@@ -1,15 +1,23 @@
 package com.javalogger;
 
 import com.javalogger.context.Context;
+import com.javalogger.context.LogContext;
 
 public class JavaLogger {
-	private static Context context;
+	private Class<?> c;
+	private Context context;
 	
-	public static void print(String message) {
+	public JavaLogger(Class<?> c) {
+		this.c = c;
+		this.context = new LogContext(c);
+	}
+	
+	public void print(String message) {
 		context.print(message);
 	}
 	
-	public static void println(String message) {
+	public void println(String message) {
 		context.println(message);
 	}
+	
 }
