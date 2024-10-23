@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javalogger.test.config;
+package com.javalogger.config;
 
 import static org.junit.jupiter.api.Assertions.*;
 
